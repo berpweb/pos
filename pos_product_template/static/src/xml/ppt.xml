@@ -53,9 +53,9 @@
         <span class='product' t-att-data-product-id="product.id">
             <div class="product-img">
                 <img t-att-src='image_url' /> 
-                <span class="price-tag">
+                <!-- <span class="price-tag">
                     <t t-esc="product.product_variant_count"/> Variants
-                </span>
+                </span> -->
             </div>
             <div class="product-name">
                 <t t-esc="product.name"/>
@@ -91,9 +91,9 @@
         <span class='attribute-value' t-att-data-attribute-id="value.attribute_id[0]" t-att-data-attribute-value-id="value.id">
             <div class="button">
                 <div class="attribute-value-header">
-                    <span class="variant-quantity">
+                    <!-- <span class="variant-quantity">
                         <t t-esc="variant_qty"/> Variants
-                    </span>
+                    </span> -->
                 </div>
                 <div class="attribute-value-name">
                     <t t-esc="value.name"/>
@@ -118,14 +118,14 @@
         <span class='variant' t-att-data-variant-id="variant.id">
             <div class="variant-header">
                 <t t-if="!variant.to_weight">
-                    <span class="price-tag">
+                    <!-- <span class="price-tag">
                         <t t-esc="widget.format_currency(variant.price,'Product Price')"/>
-                    </span>
+                    </span> -->
                 </t>
                 <t t-if="variant.to_weight">
-                    <span class="price-tag">
+                    <!-- <span class="price-tag">
                         <t t-esc="widget.format_currency(variant.price,'Product Price')+'/Kg'"/>
-                    </span>
+                    </span> -->
                 </t>
             </div>
             <div class="variant-name">
